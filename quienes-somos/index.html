@@ -246,20 +246,49 @@ img.emoji {
 		// Inject the skip link.
 		sibling.parentElement.insertBefore( skipLink, sibling );
 	}() );</script>
-		<script type="text/javascript">(function () {
+	        <!-- Chatbot ALMA -->
+
+
+        <div id="contenedorChatbot">
+             <div id="iframeAlma" class="iframeAlma">
+               <div class="superiorIframe">
+                 <div class="fotoIframe">
+                     <img id="fotoAvatar" src="https://board.almaintelligence.com/images/users/default.png" data-skip-lazy="" alt="">
+                 </div>
+                 <div class="nombreIframe">
+                   <label class="labelNombreBot"><span id="nombreAsistente">Alma</span><br>
+                   <span class="labelDisponibilidadBot">Disponible ahora </span><span class="fuentePunto">●</span></label>
+                 </div>
+                 <div class="cerrarIframe">
+                   <img id="imgCerrar" onclick="ActivarAlma()" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version2/img/cruz.png">
+                 </div>
+               </div>
+               <div class="contentIframe"><iframe id="iframeContainerAlma" src="https://assistant.almaintelligence.com:7777/comercial/?idDespacho=1c6e1a90-6d75-11ee-8087-efcfce2f4a05&idChatbot=51889c10-6d75-11ee-ab4c-db870670fb0f" width="100%" height="100%"></iframe></div>
+               <div id="inferiorIframe" class="inferiorIframe"></div>
+             </div>
+             <button id="buttonContainer" class="buttonContainer" onclick="ActivarAlma()">
+               <img class="imgAlma" id="imgAlma" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version2/img/botonIframe.png" alt="">
+               <span id="notificacionAlma" class="notificacionAlma">1</span>
+             </button>
+         </div>
+       <!-- Fin Chatbot ALMA -->
+
+  	<script type="text/javascript">(function () {
 			var c = document.body.className;
 			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
 			document.body.className = c;
 		})();</script>
-	<script src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.1.1" id="jquery-blockui-js"></script>
+	<link rel="stylesheet" id="atp_chatbot_css-css" href="https://assistant.almaintelligence.com:7777/stylesAndScripts/version2/iframe.css?ver=6.3.1" media="all">
+<script src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.1.1" id="jquery-blockui-js"></script>
 <script id="wc-add-to-cart-js-extra">var wc_add_to_cart_params = {"ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"\/carrito\/","is_cart":"","cart_redirect_after_add":"no"};</script>
 <script src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.1.1" id="wc-add-to-cart-js"></script>
 <script src="/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.1.1" id="js-cookie-js"></script>
 <script id="woocommerce-js-extra">var woocommerce_params = {"ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/?wc-ajax=%%endpoint%%"};</script>
 <script src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.1.1" id="woocommerce-js"></script>
+<script type="text/javascript" id="helper" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version2/iframe.js?ver=2" data-idempresa="1c6e1a90-6d75-11ee-8087-efcfce2f4a05" data-idchatbot="51889c10-6d75-11ee-ab4c-db870670fb0f"></script>
 </body>
 
 
 
-<!-- Page supported by LiteSpeed Cache 5.7 on 2023-10-18 04:18:31 -->
+<!-- Page supported by LiteSpeed Cache 5.7 on 2023-10-19 03:16:50 -->
 </html>
